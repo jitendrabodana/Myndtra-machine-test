@@ -15,7 +15,7 @@
                 <!-- logo for regular state and mobile devices -->
                     <div class="d-flex align-items-center justify-content-center">
                         <img src="{{ asset('backend') }}/images/logo-dark.png" alt="">
-                        <h3><b>Al Araf Store</b> Admin</h3>
+                        <h3><b>Admin</b> </h3>
                     </div>
             </a>
         </div>
@@ -30,7 +30,7 @@
             <span>Dashboard</span>
         </a>
     </li>
-    <li class="treeview {{ Request::is('admin/orders*') ? 'active' : '' }}">
+    {{-- <li class="treeview {{ Request::is('admin/orders*') ? 'active' : '' }}">
         <a href="#">
         <i data-feather="file"></i> <span>Orders</span>
         <span class="pull-right-container">
@@ -66,9 +66,9 @@
                 <a href="{{ route('return.orders') }}"><i class="ti-more"></i>Return Orders</a>
             </li>
         </ul>
-    </li>
+    </li> --}}
 
-    <li class="treeview {{ ($route == 'brands.index') ? 'active' : '' }}">
+    {{-- <li class="treeview {{ ($route == 'brands.index') ? 'active' : '' }}">
         <a href="#">
         <i data-feather="message-circle"></i>
         <span>Brands</span>
@@ -81,7 +81,7 @@
             <a href="{{ route('brands.index') }}"><i class="ti-more"></i>All Brand</a>
         </li>
         </ul>
-    </li>
+    </li> --}}
     <li class="treeview {{ ($route == 'categories.index') ? 'active' : '' }}">
         <a href="#">
         <i data-feather="message-circle"></i>
@@ -105,7 +105,7 @@
 
     <li class="treeview {{ ($route == 'products.index') ? 'active' : '' }}">
         <a href="#">
-        <i data-feather="mail"></i> <span>Product Catalog</span>
+        <i data-feather="mail"></i> <span>Product Add</span>
         <span class="pull-right-container">
             <i class="fa fa-angle-right pull-right"></i>
         </span>
@@ -120,7 +120,7 @@
         </ul>
     </li>
 
-    <li class="treeview {{ ($prefix == '/slider') ? 'active' : '' }}">
+    {{-- <li class="treeview {{ ($prefix == '/slider') ? 'active' : '' }}">
         <a href="#">
         <i data-feather="file"></i> <span>Slider</span>
         <span class="pull-right-container">
@@ -132,9 +132,9 @@
                 <a href="{{ route('slider.index') }}"><i class="ti-more"></i>Manage Slider</a>
             </li>
         </ul>
-    </li>
+    </li> --}}
 
-    <li class="treeview {{ ($prefix == '/coupons') ? 'active' : '' }}">
+    {{-- <li class="treeview {{ ($prefix == '/coupons') ? 'active' : '' }}">
         <a href="#">
         <i data-feather="file"></i> <span>Coupons</span>
         <span class="pull-right-container">
@@ -165,11 +165,11 @@
                 <a href="{{ route('state.index') }}"><i class="ti-more"></i>Ship State</a>
             </li>
         </ul>
-    </li>
+    </li> --}}
 
     <li class="header nav-small-cap">User Interface</li>
 
-    <li class="treeview">
+    {{-- <li class="treeview">
         <a href="#">
         <i data-feather="grid"></i>
         <span>Components</span>
@@ -187,7 +187,7 @@
         <li><a href="components_nestable.html"><i class="ti-more"></i>Nestable</a></li>
         <li><a href="components_progress_bars.html"><i class="ti-more"></i>Progress Bars</a></li>
         </ul>
-    </li>
+    </li> --}}
     </ul>
 </section>
 

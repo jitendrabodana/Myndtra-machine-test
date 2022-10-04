@@ -71,8 +71,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
                     <!--  LOGO  -->
-                    <div class="logo"> <a href="{{ route('home') }}"> <img
-                                src="{{ asset('frontend') }}/assets/images/logo.png" alt="logo"> </a> </div>
+                    <div class="logo"> <a href="{{ route('home') }}"><b style="color: white; font-size:40px;margin-top:-10px"> Myntra </b> </a> </div>
                     <!-- /.logo -->
                     <!--  LOGO : END  -->
                 </div>
@@ -81,7 +80,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-7 top-search-holder">
                     <!-- /.contact-row -->
                     <!--  SEARCH AREA  -->
-                    <div class="search-area">
+                    {{-- <div class="search-area">
                         <form>
                             <div class="control-group">
                                 <ul class="categories-filter animate-dropdown">
@@ -104,7 +103,7 @@
                                 <a class="search-button" href="#"></a>
                             </div>
                         </form>
-                    </div>
+                    </div> --}}
                     <!-- /.search-area -->
                     <!--  SEARCH AREA : END  -->
                 </div>
@@ -189,7 +188,7 @@
                                     </a>
                                 </li>
                                 @php
-                                    $categories = \App\Models\Category::with(['subcategory', 'subsubcategory', 'products'])->orderBy('category_name_en', 'ASC')->get();
+                                    $categories = \App\Models\Category::with(['subcategory', 'subsubcategory', 'products'])->orderBy('category_name_en', 'DESC')->get();
                                 @endphp
                                 @foreach ($categories as $category)
                                     @if ($loop->index > 4)

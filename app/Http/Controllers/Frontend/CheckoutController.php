@@ -92,6 +92,7 @@ class CheckoutController extends Controller
 
     public function checkoutStore(CheckoutStoreRequest $request)
     {
+        // print_r($request->all());die;
         $data = [];
         $data['shipping_name'] = $request->shipping_name;
         $data['shipping_email'] = $request->shipping_email;
@@ -99,7 +100,7 @@ class CheckoutController extends Controller
         $data['shipping_postCode'] = $request->shipping_postCode;
         $data['division_id'] = $request->division_id;
         $data['district_id'] = $request->district_id;
-        $data['state_id'] = $request->state_id;
+        $data['state_id'] = 1;
         $data['shipping_address'] = $request->shipping_address;
         $data['shipping_notes'] = $request->shipping_notes;
 

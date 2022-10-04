@@ -17,14 +17,14 @@ class CategorySeeder extends Seeder
         // Category::factory()->count(50)->create();
 
         $category_list_en = [
-            'Clothing & Fashion',
-            'Healthcare & Hygiene',
+            'WOMANS',
+            'BEAUTY',
             'Shoes & Bags',
-            'Books & Stationary',
-            'Computer & Accessories',
-            'Consumer Electronics',
+            'MENS',
+            'KIDS',
+            'HOMES & LIVING',
             'Security Systems & Accessories',
-            'Mobile & Accessories'
+            'MY OFFERS'
         ];
 
         $category_list_bn = [

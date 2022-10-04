@@ -25,7 +25,7 @@ class FrontendPageController extends Controller
         $skip_category_products_0 = Product::where('category_id', $skip_category_0->id)
                         ->where('status', 1)
                         ->latest()->limit(20)->get();
-
+// dd($skip_category_0);die;
         $skip_brand_0 = Brand::skip(0)->first();
         $skip_brand_products_0 = Product::where('brand_id', $skip_brand_0->id)
                         ->where('status', 1)

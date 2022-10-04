@@ -21,6 +21,10 @@ class DatabaseSeeder extends Seeder
             SubCategorySeeder::class,
             SubSubCategorySeeder::class,
             ProductSeeder::class,
+            ShipDistrictSeeder::class,
+            ShipDivisionSeeder::class,
+            ShipStateSeeder::class
+
         ]);
     }
 }

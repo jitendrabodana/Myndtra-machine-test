@@ -90,7 +90,7 @@
                                         <div class="form-group">
                                             <h5>District Select <span class="text-danger">*</span></h5>
                                             <div class="controls">
-                                                <select class="custom-select form-control unicase-form-control" aria-label="District Select" name="district_id">
+                                                <select class="custom-select form-control unicase-form-control" aria-label="District Select" name="district_id" >
                                                     <option selected="" disabled="">Select district Name</option>
                                                 </select>
                                             </div>
@@ -102,10 +102,11 @@
                                             <h5>State Select <span class="text-danger">*</span></h5>
                                             <div class="controls">
                                                 <select class="custom-select form-control unicase-form-control" aria-label="State Select" name="state_id">
-                                                    <option selected="" disabled="">Select state Name</option>
+                                                    <option selected="" value="{{ $division->id }}" disabled="">Select State</option>
+
                                                 </select>
                                             </div>
-                                            @error('state_id')
+                                            @error('')
                                                 <span class="alert text-danger">{{ $message }}</span>
                                             @enderror
                                         </div>

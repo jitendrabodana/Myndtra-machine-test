@@ -30,7 +30,7 @@ class CheckoutStoreRequest extends FormRequest
             'shipping_postCode' => 'required',
             'division_id' => 'required|numeric',
             'district_id' => 'required|numeric',
-            'state_id' => 'required|numeric',
+            'state_id' => 'numeric',
             'shipping_address' => 'required',
             'shipping_notes' => 'nullable',
             'payment_method' => 'required',
